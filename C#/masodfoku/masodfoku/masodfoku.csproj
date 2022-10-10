@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C8630D37-E674-439A-A6E2-2177466EC490}</ProjectGuid>
+    <ProjectGuid>{B0B862BF-AF25-4622-94CE-8ACEBA2BEF1C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>masodiklol</RootNamespace>
-    <AssemblyName>masodiklol</AssemblyName>
+    <RootNamespace>masodfoku</RootNamespace>
+    <AssemblyName>masodfoku</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

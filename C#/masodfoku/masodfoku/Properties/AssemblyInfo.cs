@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("masodiklol")]
+[assembly: AssemblyTitle("masodfoku")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("masodiklol")]
+[assembly: AssemblyProduct("masodfoku")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c8630d37-e674-439a-a6e2-2177466ec490")]
+[assembly: Guid("b0b862bf-af25-4622-94ce-8aceba2bef1c")]
 
 // Version information for an assembly consists of the following four values:
 //
