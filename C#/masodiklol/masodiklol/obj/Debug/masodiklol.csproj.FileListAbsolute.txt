@@ -1,0 +1,8 @@
+D:\AndorkoZsolt\C#\masodiklol\masodiklol\bin\Debug\masodiklol.exe.config
+D:\AndorkoZsolt\C#\masodiklol\masodiklol\bin\Debug\masodiklol.exe
+D:\AndorkoZsolt\C#\masodiklol\masodiklol\bin\Debug\masodiklol.pdb
+D:\AndorkoZsolt\C#\masodiklol\masodiklol\obj\Debug\masodiklol.csproj.AssemblyReference.cache
+D:\AndorkoZsolt\C#\masodiklol\masodiklol\obj\Debug\masodiklol.csproj.SuggestedBindingRedirects.cache
+D:\AndorkoZsolt\C#\masodiklol\masodiklol\obj\Debug\masodiklol.csproj.CoreCompileInputs.cache
+D:\AndorkoZsolt\C#\masodiklol\masodiklol\obj\Debug\masodiklol.exe
+D:\AndorkoZsolt\C#\masodiklol\masodiklol\obj\Debug\masodiklol.pdb
