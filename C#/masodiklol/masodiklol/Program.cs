@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -65,12 +67,54 @@ namespace masodiklol
 
             if(egesz < 10)
             {
-                Console.WriteLine("Mert a szám kisebb mint 10 " + egesz - 10);
+                Console.WriteLine("Mert a szám kisebb mint 10 " + Convert.ToInt32(egesz - 10));
             }else if(egesz > 10)
             {
                 Console.WriteLine("Mert a szám nagyobb mint 10");
             }
-            
+
+
+            //switch - case szerkezet
+            string auto = "r34";
+
+            switch (auto)
+            {
+                case "r34":
+                    Console.WriteLine("Sheesh aútó");
+                    break;
+                case "bmw":
+                    Console.WriteLine("Vidd már ezt a rákot innen!!!");
+                    break;
+                default:
+                    Console.WriteLine("Nem sheesh autó :C");
+                    break;
+            }
+
+            /*III. Ciklusok
+             
+              előtesztelő:
+                -for
+                -kiterjesztett for: for each
+                -while
+             hátultesztelő:
+                -do - while
+             */
+
+            //for ciklus
+            for (int i = 1; i < 10; i++)
+            {
+                Console.WriteLine(i);
+            }
+
+            //while ciklus
+            int x = 1;
+            while (x < 24)
+            {
+                Console.WriteLine("Poggers amíg x kissebb mint 24. Most járunk: " + x);
+                x++;
+            }
+
+
             Console.ReadKey();
         }
     }
