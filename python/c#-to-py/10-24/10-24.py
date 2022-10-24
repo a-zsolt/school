@@ -64,11 +64,22 @@ def het():
     i = 71
     while i < 200:
         istr = str(i)
-        x = istr[:-1]
+        x = int(istr[:-1])
+        x2 = int(istr[-1])*2
 
-        x2 = istr[:int(len(istr))-1]
-        print(x2)
-
+        if (x - x2) / 7 == 0:
+            print(i)
         i+=1
+
+def hetpar():
+    i = 70
+    while i < 200:
+        istr = str(i)
+        x = int(istr[:-1])
+        x2 = int(istr[-1]) * 2
+
+        if (x - x2) / 7 == 0:
+            print(i)
+        i += 2
 
 menuvalaszto()

@@ -119,7 +119,7 @@ namespace menuvalaszto
                 int utolso = i % (10);
                 int x2 = utolso * 2; 
 
-                if (x2 / 7 == 0)
+                if ((x - x2) / 7 == 0)
                 {
                     Console.WriteLine(i);
                 }
