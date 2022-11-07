@@ -1,0 +1,133 @@
+body {
+    --text-color: #222;
+    --text-color-invered: #edf0f1;
+    --bkg-color: #fff;
+    --div-color: #f1f1f176;
+    --solid-div-color: #f9f9f9;
+    --blur-color:rgba(255, 255, 255, 0.8);
+    --blur-color-inverted: rgba(0, 0, 0, 0.8);
+    --icon: url(https://imgur.com/UJezcxA.png);
+}
+
+body.dark-theme {
+    --text-color: #edf0f1;
+    --text-color-invered: #222;
+    --bkg-color: #121212;
+    --div-color: #24252a76;
+    --solid-div-color: #1b1b1d;
+    --blur-color:rgba(0, 0, 0, 0.8);
+    --blur-color-inverted: rgba(255, 255, 255, 0.8);
+    --icon: url(https://i.imgur.com/qJkZvOO.png);
+}
+  
+@media (prefers-color-scheme: dark){
+    body {
+        --text-color: #edf0f1;
+        --text-color-invered: #222;
+        --bkg-color: #121212;
+        --div-color: #24252a76;
+        --solid-div-color: #1b1b1d;
+        --blur-color:rgba(0, 0, 0, 0.8);
+        --blur-color-inverted: rgba(255, 255, 255, 0.8);
+        --icon: url(https://i.imgur.com/qJkZvOO.png);
+    }
+
+    body.light-theme {
+        --text-color: #222;
+        --text-color-invered: #edf0f1;
+        --bkg-color: #fff;
+        --div-color: #f1f1f176;
+        --solid-div-color: #f9f9f9;
+        --blur-color:rgba(255, 255, 255, 0.8);
+        --blur-color-inverted: rgba(0, 0, 0, 0.8);
+        --icon: url(https://imgur.com/UJezcxA.png);
+    }
+}
+
+body{
+    margin: 0;
+    background-color: #111111;
+}
+
+.text{
+    font-family: Montserrat;
+    color: var(--text-color);
+    transition: color 0.3s ease 0s;
+    -webkit-font-smoothing: antialiased;
+}
+
+.content{
+    padding: 20px;
+}
+
+.categorietitle{
+    margin: 0px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.bannerimg{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.cards{
+    border-radius: 18px;
+    height: 510px;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+.card{
+    width: 1000px;
+    height: 500px;
+    min-width: 1000px;
+    margin-right: 20px;
+    border-radius: 18px;
+    background-color: var(--div-color);
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+    transition: all .3s cubic-bezier(0,0,.5,1);
+    white-space: normal;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.cardimg{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    display: block;
+    border-radius: 18px;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+}
+
+.productdetails{
+    position: relative;
+    margin-bottom: -120px;
+    padding: 20px;
+}
+
+.productname{
+    font-size: 10px;
+    margin: 0px;
+    margin-bottom: 9px;
+}
+
+.productdesc{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.productprice{
+    margin: 0px;
+    margin-top: 10px;
+}
