@@ -1,6 +1,3 @@
-import anime from 'anime.js';
-
-
 const arrownext = document.getElementsByClassName('arrownext')
 const arrowback = document.getElementsByClassName('arrowback')
 const cards = document.getElementsByClassName('cards')
