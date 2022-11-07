@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./pics/favicon.ico" type="image/x-icon">
+    <script type="module" src="./js/script.js" defer></script>
     <title>Porsche</title>
 </head>
 <body>
@@ -16,7 +18,7 @@
     <div class="content">
         <div class="categories">
             <h2 class="categorietitle text">718</h2>
-            <div class="cards">
+            <div class="cards" id="0" onmouseover="showArrow(this)" onmouseout="hideArrow(this)">
                 <div class="card" id="iphone14" onclick="openbuysite(this)">
                     <div class="productdetails">
                         <p class="productname text blk">Cayman</p>
@@ -49,10 +51,16 @@
                     </div>
                     <img class="cardimg" src="pics/cayman_spyter.png" alt="">
                 </div>
+                <div class="arrownext" id="0" type="button" onclick="scrollforward(this)">
+                    <span class="material-symbols-rounded nexticon">arrow_forward_ios</span>
+                </div>
+                <div class="arrowback" id="0" type="button" onclick="scrollbackward(this)">
+                    <span class="material-symbols-rounded nexticon">arrow_back_ios_new</span>
+                </div>
             </div>
             </div>
             <h2 class="categorietitle text">911</h2>
-            <div class="cards">
+            <div class="cards" id="1" onmouseover="showArrow(this)" onmouseout="hideArrow(this)">
                 <div class="card" id="iphone14" onclick="openbuysite(this)">
                     <div class="productdetails">
                         <p class="productname text blk">911 Carrera</p>
@@ -65,7 +73,7 @@
                     <div class="productdetails">
                         <p class="productname text whi">911 GT3</p>
                         <p class="productdesc text whi">Everyday's race car</p>
-                        <p class="productprice text whi">$120,000</p>
+                        <p class="productprice text whi">$160,000</p>
                     </div>
                     <img class="cardimg" src="pics/gt3.png" alt="">
                 </div>
@@ -73,7 +81,7 @@
                     <div class="productdetails">
                         <p class="productname text blk">911 GT3 RS</p>
                         <p class="productdesc text blk">Race car performance</p>
-                        <p class="productprice text blk">$143,050</p>
+                        <p class="productprice text blk">$197,050</p>
                     </div>
                     <img class="cardimg" src="pics/gt3rs.png" alt="">
                 </div>
@@ -81,10 +89,15 @@
                     <div class="productdetails">
                         <p class="productname text blk">911 Carrera Cabriolet</p>
                         <p class="productdesc text blk">Feel the wind</p>
-                        <p class="productprice text blk">$98,300</p>
+                        <p class="productprice text blk">$115,350</p>
                     </div>
                     <img class="cardimg" src="pics/carrera-spyder.png" alt="">
                 </div>
+                <div class="arrownext" id="1" type="button" onclick="scrollforward(this)">
+                    <span class="material-symbols-rounded textinv nexticon">arrow_forward_ios</span>
+                </div>
+                <div class="arrowback" id="1" type="button" onclick="scrollbackward(this)">
+                    <span class="material-symbols-rounded textinv nexticon">arrow_back_ios_new</span>
                 </div>
             </div>
         </div>
