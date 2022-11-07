@@ -1,6 +1,7 @@
 const arrownext = document.getElementsByClassName('arrownext')
 const arrowback = document.getElementsByClassName('arrowback')
 const cards = document.getElementsByClassName('cards')
+const navbar = document.getElementById("navbar");
 
 function showArrow (x){
     var index = x.id
@@ -29,10 +30,3 @@ function scrollbackward(x){
         behavior: 'smooth'
     })
 }
-
-function scroll(){
-
-    anime
-}
-
-

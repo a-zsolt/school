@@ -56,9 +56,6 @@ body{
     -webkit-font-smoothing: antialiased;
 }
 
-.content{
-}
-
 .categorietitle{
     margin: 0px;
     margin-left: 20px;
@@ -84,6 +81,7 @@ body{
     scroll-padding: 0 24px;
     flex-shrink: 1;
     padding-left: 20px;
+    -webkit-overflow-scrolling: touch;
 }
 
 .card{
