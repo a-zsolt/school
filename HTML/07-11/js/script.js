@@ -30,3 +30,7 @@ function scrollbackward(x){
         behavior: 'smooth'
     })
 }
+
+function openmore(x){
+    window.open(`./pics/${x.id}/main.png`, "_self")
+}

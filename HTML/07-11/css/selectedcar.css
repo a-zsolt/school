@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container > .text {
+    padding: 20px;
+    margin: 0px;
+}
+
+.img{
+    width: auto;
+    max-width: 1000px;
+    height: auto;
+}
