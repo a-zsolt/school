@@ -44,6 +44,23 @@ body.dark-theme {
     }
 }
 
+@media only screen and (max-width : 1050px){
+    .card{
+        min-width: 300px;
+    }
+}
+@media only screen and (min-width : 1050px){
+    .card{
+        min-width: 1000px;
+    }
+}
+
+@media only screen and (max-width : 400px){
+    .bannerimg{
+        content:url("../pics/banner_small_text.png");
+    }
+}
+
 body{
     margin: 0;
     background-color: #111111;
@@ -87,7 +104,6 @@ body{
 .card{
     width: 1000px;
     height: 500px;
-    min-width: 1000px;
     margin-right: 20px;
     border-radius: 18px;
     background-color: var(--div-color);

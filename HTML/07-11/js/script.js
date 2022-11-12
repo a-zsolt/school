@@ -1,6 +1,7 @@
 const arrownext = document.getElementsByClassName('arrownext')
 const arrowback = document.getElementsByClassName('arrowback')
 const cards = document.getElementsByClassName('cards')
+const card = document.getElementsByClassName('card')
 const navbar = document.getElementById("navbar");
 
 function showArrow (x){
@@ -18,7 +19,7 @@ function hideArrow(x){
 function scrollforward(x){
     var index = x.id
     cards[x.id].scrollBy({
-        left: 1000,
+        left: card[0].offsetWidth,
         behavior: 'smooth'
     })
 }
@@ -26,7 +27,7 @@ function scrollforward(x){
 function scrollbackward(x){
     var index = x.id
     cards[x.id].scrollBy({
-        left: -1000,
+        left: -card[0].offsetWidth,
         behavior: 'smooth'
     })
 }
