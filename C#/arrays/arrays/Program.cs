@@ -81,15 +81,44 @@ namespace arrays
             //tömb raandom számokkal
             int[] randomint = new int[50];
 
-            Random r = new Random();
+            Random r = new Random(420);
 
             foreach(var x in randomint)
             {
-                randomint[x] = r.Next();
+                randomint[x] = r.Next(420);
                 Console.WriteLine(randomint[x]);
             }
 
+            string[] niggaarray = new string[] { "Snitch nigga", "Bitch nigga", "thats that shit i dont like" };
+
+            for (int i = 0; i < 69; i++)
+            {
+                Console.WriteLine(niggaarray[0]);
+                Console.WriteLine(niggaarray[2]);
+                Console.WriteLine(niggaarray[1]);
+                Console.WriteLine(niggaarray[2]);
+            }
+
+            //matrix hard code feltöltéés
+            int[,] escapethematrix = new int[,]
+            {
+                { 3, 6, 12 },
+                { 1, 1, 9 },
+                { 3, 3, 69}
+            };
+
+            Console.WriteLine(escapethematrix[2,2]);    
+
+            //összes elem kiiratása
+            foreach (var y in escapethematrix)
+            {
+                Console.WriteLine(y);
+            }
             Console.ReadKey();
+
+            //matrix betöltése
+            int[,] fillthematrix = new int[3, 3];
+            
         }
     }
 }
