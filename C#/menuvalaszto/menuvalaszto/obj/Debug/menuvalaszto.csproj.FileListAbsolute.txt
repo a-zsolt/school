@@ -6,3 +6,11 @@ C:\Users\zsolt\Documents\school\C#\menuvalaszto\menuvalaszto\obj\Debug\menuvalas
 C:\Users\zsolt\Documents\school\C#\menuvalaszto\menuvalaszto\obj\Debug\menuvalaszto.csproj.CoreCompileInputs.cache
 C:\Users\zsolt\Documents\school\C#\menuvalaszto\menuvalaszto\obj\Debug\menuvalaszto.exe
 C:\Users\zsolt\Documents\school\C#\menuvalaszto\menuvalaszto\obj\Debug\menuvalaszto.pdb
+C:\Users\Gerzson\Documents\Codes\school\C#\menuvalaszto\menuvalaszto\bin\Debug\menuvalaszto.exe.config
+C:\Users\Gerzson\Documents\Codes\school\C#\menuvalaszto\menuvalaszto\bin\Debug\menuvalaszto.exe
+C:\Users\Gerzson\Documents\Codes\school\C#\menuvalaszto\menuvalaszto\bin\Debug\menuvalaszto.pdb
+C:\Users\Gerzson\Documents\Codes\school\C#\menuvalaszto\menuvalaszto\obj\Debug\menuvalaszto.csproj.AssemblyReference.cache
+C:\Users\Gerzson\Documents\Codes\school\C#\menuvalaszto\menuvalaszto\obj\Debug\menuvalaszto.csproj.SuggestedBindingRedirects.cache
+C:\Users\Gerzson\Documents\Codes\school\C#\menuvalaszto\menuvalaszto\obj\Debug\menuvalaszto.csproj.CoreCompileInputs.cache
+C:\Users\Gerzson\Documents\Codes\school\C#\menuvalaszto\menuvalaszto\obj\Debug\menuvalaszto.exe
+C:\Users\Gerzson\Documents\Codes\school\C#\menuvalaszto\menuvalaszto\obj\Debug\menuvalaszto.pdb

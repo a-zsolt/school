@@ -14,16 +14,17 @@ namespace masodfoku
             double a, b, c;
             //változók dklarálása
             Console.WriteLine("Add meg az a változó értékét:");
-            a = Convert.ToInt32(Console.ReadLine());
+            a = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Add meg a b változó értékét:");
-            b = Convert.ToInt32(Console.ReadLine());
+            b = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Add meg az c változó értékét:");
-            c = Convert.ToInt32(Console.ReadLine());
+            c = Convert.ToDouble(Console.ReadLine());
 
             //= 0 ?
             if(a == 0 || b ==0 || c == 0)
             {
                 Console.WriteLine("Nem adhatsz meg olyna értéket ami =< 0-nál");
+                return;
             }
             else
             {
@@ -35,7 +36,7 @@ namespace masodfoku
             double x = xfirst / 2 * 9;
 
             double x2first = -b - b - 4 * a * c;
-            double x2 = x2first/2*9;
+            double x2 = x2first/2*a;
 
             Console.WriteLine("x = " + x);
             Console.WriteLine("x2 = " + x2);
