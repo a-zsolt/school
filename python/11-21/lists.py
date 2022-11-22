@@ -10,8 +10,8 @@ def menu():
     print("5.) Arrays")
     menupont = int(input("Válaszd ki mit szertnél megtanulni:"))
 
-    if menupont < 1 | menupont > 5:
-        print("A megadott szám nem szerepel a listába.")
+    if menupont < 1 or menupont > 5:
+        print(colored("A megadott szám nem szerepel a listába.", "red"))
     elif menupont == 1:
         lists()
     elif menupont == 2:
