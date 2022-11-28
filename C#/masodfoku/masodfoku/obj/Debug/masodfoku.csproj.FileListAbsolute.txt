@@ -1,8 +1,0 @@
-D:\AndorkoZsolt\C#\masodfoku\masodfoku\bin\Debug\masodfoku.exe.config
-D:\AndorkoZsolt\C#\masodfoku\masodfoku\bin\Debug\masodfoku.exe
-D:\AndorkoZsolt\C#\masodfoku\masodfoku\bin\Debug\masodfoku.pdb
-D:\AndorkoZsolt\C#\masodfoku\masodfoku\obj\Debug\masodfoku.csproj.AssemblyReference.cache
-D:\AndorkoZsolt\C#\masodfoku\masodfoku\obj\Debug\masodfoku.csproj.SuggestedBindingRedirects.cache
-D:\AndorkoZsolt\C#\masodfoku\masodfoku\obj\Debug\masodfoku.csproj.CoreCompileInputs.cache
-D:\AndorkoZsolt\C#\masodfoku\masodfoku\obj\Debug\masodfoku.exe
-D:\AndorkoZsolt\C#\masodfoku\masodfoku\obj\Debug\masodfoku.pdb
