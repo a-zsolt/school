@@ -35,16 +35,6 @@ def lists():
     print("Egy listában bármilyen típusú változót tárolhatunk.")
     print(" ")
 
-    print("Kiíhatjuk az egész listát vagy csak a kijelölt elemeket index segítségével.")
-    print("Egy listában a lista mögé [] + számmal jeöljükk ki az elemet.")
-    print(colored("---------CODE---------", "green"))
-    print(colored("print(lista)", "green"))
-    print(colored("print(lista[1] + ', ' lista[4])", "green"))
-    print(colored("---------OUTPUT-------", "yellow"))
-    print(colored(lista, "yellow"))
-    print(colored(lista[1] + ", " + lista[4], "yellow"))
-    print(" ")
-
     print(colored("Metódusok", attrs=["bold", "underline"]))
     print("A listához tartozó metódusokat a következőképpen tudjuk meghívni:")
     print(" - append()", "|", "Egy elemet ad hozzá a listához.")
@@ -67,6 +57,91 @@ def lists():
     print(colored("---------OUTPUT-------", "yellow"))
     print(colored(len(lista), "yellow"))
     print(" ")
+
+    print(colored("Elem kiiratása indexel", attrs=["bold", "underline"]))
+    print("Kiíhatjuk az egész listát vagy csak a kijelölt elemeket index segítségével.")
+    print("Egy listában a lista mögé [] + számmal jeöljükk ki az elemet.")
+    print(colored("---------CODE---------", "green"))
+    print(colored("print(lista)", "green"))
+    print(colored("print(lista[1] + ', ' lista[4])", "green"))
+    print(colored("---------OUTPUT-------", "yellow"))
+    print(colored(lista, "yellow"))
+    print(colored(lista[1] + ", " + lista[4], "yellow"))
+    print(" ")
+
+    print(colored("Elem megváltozatása indexel", attrs=["bold", "underline"]))
+    print("Egy listában a lista mögé [] + számmal jeöljükk ki az elemet és mint egy vátltozót módosíthatjuk.")
+    print(colored("---------CODE---------", "green"))
+    print(colored("lista", "green"))
+    print(colored("lista[1] = 'változtatott'", "green"))
+    print(colored("lista", "green"))
+    print(colored("---------OUTPUT-------", "yellow"))
+    print(colored(lista, "yellow"))
+    lista[1] = "változtatott"
+    print(colored(lista, "yellow"))
+    print(" ")
+
+    print(colored("Elem hozzáadása", attrs=["bold", "underline"]))
+    print("A lista végéhez hozzáadhatunk egy elemet a .append() metódussal.")
+    print(colored("---------CODE---------", "green"))
+    print(colored("lista.append('új elem')", "green"))
+    print(colored("lista", "green"))
+    print(colored("---------OUTPUT-------", "yellow"))
+    lista.append("új elem")
+    print(colored(lista, "yellow"))
+    print(" ")
+
+    print(colored("Elem kitörlése", attrs=["bold", "underline"]))
+    print("A lista végéről törölhetünk egy elemet a .remove() metódussal.")
+    print(colored("---------CODE---------", "green"))
+    print(colored("lista.remove('új elem')", "green"))
+    print(colored("lista", "green"))
+    print(colored("---------OUTPUT-------", "yellow"))
+    lista.remove("új elem")
+    print(colored(lista, "yellow"))
+    print(" ")
+
+    print(colored("Egy listán át 'Loop'-ni", attrs=["bold", "underline"]))
+    print("Egy listán át tudunk 'Loop'-ni a következőképpen:")
+    print(colored("---------CODE---------", "green"))
+    print(colored("for x in lista:", "green"))
+    print(colored("    print(x)", "green"))
+    print(colored("---------OUTPUT-------", "yellow"))
+    for x in lista:
+        print(colored(x, "yellow"))
+    print(" ")
+
+    print(colored("Lista összehasonlítása", attrs=["bold", "underline"]))
+    print("A lista összehasonlítás segít létehozni egy új listát egy másik lista alapján.")
+    print("Két listát összehasonlíthatunk a következőképpen:")
+    print(colored("---------CODE---------", "green"))
+    print(colored("lista1 = ['alma', 'körte', 'szilva', green", "green"))
+    print(colored("ujlista = []", "green"))
+    print(colored("for x in lista1:", "green"))
+    print(colored("    if 'a' in x:", "green"))
+    print(colored("        ujlista.append(x)", "green"))
+    print(colored("print(ujlista)", "green"))
+    print(colored("---------OUTPUT-------", "yellow"))
+    lista1 = ["alma", "körte", "szilva"]
+    ujlista = []
+    for x in lista1:
+        if "a" in x:
+            ujlista.append(x)
+    print(colored(ujlista, "yellow"))
+    print(" ")
+
+    print(colored("Lista rendezése.", attrs=["bold", "underline"]))
+    print("A lista rendezéséhez a .sort() metódust használjuk.")
+    print("Ennél a példánál a lista elemeit ABC sorrendbe rendezzük.")
+    print(colored("---------CODE---------", "green"))
+    print(colored("lista.sort()", "green"))
+    print(colored("print(lista)", "green"))
+    print(colored("---------OUTPUT-------", "yellow"))
+    lista.sort()
+    print(colored(lista, "yellow"))
+    print(" ")
+
+
 
 
 def tuples():
@@ -98,6 +173,33 @@ def tuples():
     print(colored(len(tuple), "yellow"))
     print(" ")
 
+    print(colored("Egy touplen át 'Loop'-ni", attrs=["bold", "underline"]))
+    print("Egy touplen át tudunk 'Loop'-ni a következőképpen:")
+    print(colored("---------CODE---------", "green"))
+    print(colored("for x in tuple:", "green"))
+    print(colored("    print(x)", "green"))
+    print(colored("---------OUTPUT-------", "yellow"))
+    for x in tuple:
+        print(colored(x, "yellow"))
+    print(" ")
+
+    print(colored("Tuple elem előfordulásának száma.", attrs=["bold", "underline"]))
+    print("A tuple-ban az elem előfordulásának számát a .count() metódussal tudjuk meghatározni.")
+    print(colored("---------CODE---------", "green"))
+    print(colored("print(tuple.count('lists'))", "green"))
+    print(colored("---------OUTPUT-------", "yellow"))
+    print(colored(tuple.count("lists"), "yellow"))
+    print(" ")
+
+    print(colored("Tuple index", attrs=["bold", "underline"]))
+    print("A tuple-ban az elem indexét a .index() metódussal tudjuk meghatározni.")
+    print(colored("---------CODE---------", "green"))
+    print(colored("print(tuple.index('lists'))", "green"))
+    print(colored("---------OUTPUT-------", "yellow"))
+    print(colored(tuple.index("lists"), "yellow"))
+    print(" ")
+
+
 
 def sets():
     os.system('cls')
@@ -115,6 +217,25 @@ def sets():
     print(colored("print(set)", "green"))
     print(colored("---------OUTPUT-------", "yellow"))
     print(colored(set, "yellow"))
+    print(" ")
+
+    print(colored("Lista hosszúság", attrs=["bold", "underline"]))
+    print("A set hosszúságát a len() metódussal tudjuk meghatározni.")
+    print(colored("---------CODE---------", "green"))
+    print(colored("print(len(set))", "green"))
+    print(colored("---------OUTPUT-------", "yellow"))
+    print(colored(len(set), "yellow"))
+    print(" ")
+
+    print(colored("Egy set-en át 'Loop'-ni", attrs=["bold", "underline"]))
+    print("Egy set-en át tudunk 'Loop'-ni a következőképpen:")
+    print(colored("---------CODE---------", "green"))
+    print(colored("for x in set:", "green"))
+    print(colored("    print(x)", "green"))
+    print(colored("---------OUTPUT-------", "yellow"))
+    for x in set:
+        print(colored(x, "yellow"))
+    print(" ")
 
 
 def dictionaries():
@@ -142,6 +263,56 @@ def dictionaries():
     print(colored(dictionary, "yellow"))
     print(colored(dictionary["tuples"] + ", " + dictionary["arrays"], "yellow"))
     print(" ")
+
+    print(colored("Lista hosszúság", attrs=["bold", "underline"]))
+    print("A dictionary hosszúságát a len() metódussal tudjuk meghatározni.")
+    print(colored("---------CODE---------", "green"))
+    print(colored("print(len(dictionary))", "green"))
+    print(colored("---------OUTPUT-------", "yellow"))
+    print(colored(len(dictionary), "yellow"))
+    print(" ")
+
+    print(colored("Elem hozzáadása", attrs=["bold", "underline"]))
+    print("A dictionary-hez új elemet a dictionary[""kulcs""] = érték módszerrel tudunk hozzáadni.")
+    print(colored("---------CODE---------", "green"))
+    print(colored("dictionary['new'] = 'új elem'", "green"))
+    print(colored("print(dictionary)", "green"))
+    print(colored("---------OUTPUT-------", "yellow"))
+    dictionary["new"] = "új elem"
+    print(colored(dictionary, "yellow"))
+    print(" ")
+
+    print(colored("Elem módosítása", attrs=["bold", "underline"]))
+    print("A dictionary-ben lévő elemet a dictionary[""kulcs""] = érték módszerrel tudunk módosítani.")
+    print(colored("---------CODE---------", "green"))
+    print(colored("dictionary['new'] = 'módosított új elem'", "green"))
+    print(colored("print(dictionary)", "green"))
+    print(colored("---------OUTPUT-------", "yellow"))
+    dictionary["new"] = "módosított új elem"
+    print(colored(dictionary, "yellow"))
+    print(" ")
+
+    print(colored("Elem törlése", attrs=["bold", "underline"]))
+    print("A dictionary-ben lévő elemet a del dictionary[""kulcs""] módszerrel tudunk törölni.")
+    print(colored("---------CODE---------", "green"))
+    print(colored("del dictionary['new']", "green"))
+    print(colored("print(dictionary)", "green"))
+    print(colored("---------OUTPUT-------", "yellow"))
+    del dictionary["new"]
+    print(colored(dictionary, "yellow"))
+    print(" ")
+    
+
+    print(colored("Egy dictionary-ben át 'Loop'-ni", attrs=["bold", "underline"]))
+    print("Egy dictionary-ben át tudunk 'Loop'-ni a következőképpen:")
+    print(colored("---------CODE---------", "green"))
+    print(colored("for x in dictionary:", "green"))
+    print(colored("    print(x)", "green"))
+    print(colored("---------OUTPUT-------", "yellow"))
+    for x in dictionary:
+        print(colored(x, "yellow"))
+    print(" ")
+
 
 
 def arrays():
@@ -178,6 +349,45 @@ def arrays():
     print(" - reverse()", "|", "Megfordítja a listát.")
     print(" - sort()" "|", "Rendezi a listát.")
     print(" ")
+
+    print(colored("Elem hozzáadása az arryhoz.", attrs=["bold", "underline"]))
+    print("Az append() metódussal tudunk egy elemet hozzáadni az array-hoz.")
+    print(colored("---------CODE---------", "green"))
+    print(colored("array.append(""new element"")", "green"))
+    print(colored("---------OUTPUT-------", "yellow"))
+    array.append("new element")
+    print(colored(array, "yellow"))
+    print(" ")
+
+    print(colored("Elem törlése az arry-ból.", attrs=["bold", "underline"]))
+    print("A remove() metódussal tudunk egy elemet törölni az array-ból.")
+    print(colored("---------CODE---------", "green"))
+    print(colored("array.remove(""new element"")", "green"))
+    print(colored("---------OUTPUT-------", "yellow"))
+    array.remove("new element")
+    print(colored(array, "yellow"))
+    print(" ")
+
+    print(colored("Egy array-en át 'Loop'-ni", attrs=["bold", "underline"]))
+    print("Egy array-en át 'Loop'-ni a következő kóddal tudjuk megtenni:")
+    print(colored("---------CODE---------", "green"))
+    print(colored("for x in array:", "green"))
+    print(colored("    print(x)", "green"))
+    print(colored("---------OUTPUT-------", "yellow"))
+    for x in array:
+        print(colored(x, "yellow"))
+    print(" ")
+
+    print(colored("Array rendezése.", attrs=["bold", "underline"]))
+    print("Az array rendezéséhez a sort() metódust használjuk.")
+    print(colored("---------CODE---------", "green"))
+    print(colored("array.sort()", "green"))
+    print(colored("---------OUTPUT-------", "yellow"))
+    array.sort()
+    print(colored(array, "yellow"))
+    print(" ")
+
+    
 
 
 menu()
