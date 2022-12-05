@@ -1,5 +1,6 @@
 import os
 import random
+import math
 
 os.system("cls")
 
@@ -22,6 +23,10 @@ def menu():
         hatodik()
     elif menupont == 7:
         hetedik()
+    elif menupont == 8:
+        nyolcadik()
+    elif menupont == 9:
+        kilencedik()
 
 def első():
     os.system("cls")
@@ -171,5 +176,52 @@ def hetedik():
     print("A szám 9 előfordulásainak száma:", lista.count(9))
     print("A szám 10 előfordulásainak száma:", lista.count(10))
 
+
+def nyolcadik():
+    os.system("cls")
+    print("Nyolcadik feladat.")
+    print("Írj programot, amely bekér 8 osztályzatot, eltárolja őket egy listában, majd kiírja őket egy sorban, vesszővel elválasztva. Új sorokba kiírja az összegüket, szorzatukat, átlagukat (két tizedes jegyre kerekítve)!")
+
+    #létrehozunk egy üres listát osztályzatoknak
+    osztalyzatok = []
+
+    #jegyek bekérése
+    osztalyzatok.append(int(input("Add meg az első osztályzatot: ")))
+    osztalyzatok.append(int(input("Add meg a második osztályzatot: ")))
+    osztalyzatok.append(int(input("Add meg a harmadik osztályzatot: ")))
+    osztalyzatok.append(int(input("Add meg a negyedik osztályzatot: ")))
+    osztalyzatok.append(int(input("Add meg a ötödik osztályzatot: ")))
+    osztalyzatok.append(int(input("Add meg a hatodik osztályzatot: ")))
+    osztalyzatok.append(int(input("Add meg a hetedik osztályzatot: ")))
+    osztalyzatok.append(int(input("Add meg az nyolcadik osztályzatot: ")))
+
+    #számítások
+    print("Az osztályzatok:", osztalyzatok)
+    print("Az osztályzatok összege:", sum(osztalyzatok))
+    print("Az osztályzatok szorzata:", math.prod(osztalyzatok))
+    print("Az osztályzatok átlaga:", round(sum(osztalyzatok) / len(osztalyzatok), 2))
+
+
+
+def kilencedik():
+    os.system("cls")
+    print("Kilencedik feladat.")
+    print("Kérj be a felhasználótól egy óra:perc:másodperc alakú időt, és írd ki a képernyőre, hogy a nap eleje, vagyis 0:0:0 óta hány másodperc telt el!")
+
+    #idő bekérése
+    ido = input("Add meg az időt óra:perc:másodperc formátumban: ")
+
+    #idő szétválasztása
+    ora = int(ido[0:2])
+    perc = int(ido[3:5])
+    masodperc = int(ido[6:8])
+
+    #számítások
+    masodperc_ora = ora * 3600
+    masodperc_perc = perc * 60
+    masodperc_masodperc = masodperc
+    masodperc_osszesen = masodperc_ora + masodperc_perc + masodperc_masodperc
+
+    print("Az időpont", masodperc_osszesen, "másodperc után van a nap elejétől.")
 
 menu()
