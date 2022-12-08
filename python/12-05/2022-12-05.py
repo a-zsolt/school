@@ -165,16 +165,10 @@ def hetedik():
     print("A lista hossza:", len(lista))
     print("A lista legnagyobb eleme:", max(lista))
     print("A lista legkisebb eleme:", min(lista))
-    print("A szám 1 előfordulásainak száma:", lista.count(1))
-    print("A szám 2 előfordulásainak száma:", lista.count(2))
-    print("A szám 3 előfordulásainak száma:", lista.count(3))
-    print("A szám 4 előfordulásainak száma:", lista.count(4))
-    print("A szám 5 előfordulásainak száma:", lista.count(5))
-    print("A szám 6 előfordulásainak száma:", lista.count(6))
-    print("A szám 7 előfordulásainak száma:", lista.count(7))
-    print("A szám 8 előfordulásainak száma:", lista.count(8))
-    print("A szám 9 előfordulásainak száma:", lista.count(9))
-    print("A szám 10 előfordulásainak száma:", lista.count(10))
+    x = 1
+    while x < 10:
+        print("A szám", x, "előfordulásainak száma:", lista.count(x))
+        x += 1
 
 
 def nyolcadik():
@@ -186,14 +180,8 @@ def nyolcadik():
     osztalyzatok = []
 
     #jegyek bekérése
-    osztalyzatok.append(int(input("Add meg az első osztályzatot: ")))
-    osztalyzatok.append(int(input("Add meg a második osztályzatot: ")))
-    osztalyzatok.append(int(input("Add meg a harmadik osztályzatot: ")))
-    osztalyzatok.append(int(input("Add meg a negyedik osztályzatot: ")))
-    osztalyzatok.append(int(input("Add meg a ötödik osztályzatot: ")))
-    osztalyzatok.append(int(input("Add meg a hatodik osztályzatot: ")))
-    osztalyzatok.append(int(input("Add meg a hetedik osztályzatot: ")))
-    osztalyzatok.append(int(input("Add meg az nyolcadik osztályzatot: ")))
+    while len(osztalyzatok) < 8:
+        osztalyzatok.append(int(input("Add meg " + str(len(osztalyzatok) + 1) + ". osztályzatot: ")))
 
     #számítások
     print("Az osztályzatok:", osztalyzatok)
