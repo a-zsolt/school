@@ -172,6 +172,33 @@ def hetedik():
     print("Hetedik feladat")
     print("7.) Kérj be egy mondatot, cseréld le az ékezetes betűket az ékezet nélküli párjukra, ill. a hosszú í-t i-re, írasd ki az eredményt! seréld le a kisbetűket nagybetűkre, és azt is írasd ki! Töröld a nagybetűs verzióból az írásjeleket és a szóközöket, és az eredményt írasd ki a képernyőre!")
 
+    #mondat bekérése
+    mondat = input("Adj meg egy mondatot:")
+    print("A mondat:", mondat)
+
+    #ékezetes betűk cseréje
+    mondat = mondat.replace("á", "a")
+    mondat = mondat.replace("é", "e")
+    mondat = mondat.replace("í", "i")
+    mondat = mondat.replace("ó", "o")
+    mondat = mondat.replace("ö", "o")
+    mondat = mondat.replace("ő", "o")
+    mondat = mondat.replace("ú", "u")
+    mondat = mondat.replace("ü", "u")
+    mondat = mondat.replace("ű", "u")
+    print("Az ékezetes betűk cseréje:", mondat)
+
+    #nagybetűsítés
+    mondat = mondat.upper()
+    print("Nagybetűsítés:", mondat)
+
+    #írásjelek és szóközök törlése
+    mondat = mondat.replace(" ", "")
+    mondat = mondat.replace(".", "")
+    mondat = mondat.replace(",", "")
+    mondat = mondat.replace("!", "")
+    mondat = mondat.replace("?", "")
+    print("Írásjelek és szóközök törlése:", mondat)
 
 
 def nyolcadik():
@@ -179,11 +206,28 @@ def nyolcadik():
     print("Nyolcadik feladat")
     print("Kérj be a felhasználótól egy szót és döntsd el, hogy tartalmaz-e magánhangzót! Amennyiben tartalmaz, a program írja ki a „Van benne magánhangzó.” szöveget, különben azt, hogy „Nincs benne magánhangzó.” Figyelj az ékezetes kis- és nagybetűkre is!")
 
+    szo = input("Adj meg egy szót:")
+    print("A szó:", szo)
+
+    #van benne magánhangzó
+    if "a" in szo or "e" in szo or "i" in szo or "o" in szo or "ö" in szo or "ő" in szo or "u" in szo or "ü" in szo or "ű" in szo or "A" in szo or "E" in szo or "I" in szo or "O" in szo or "Ö" in szo or "Ő" in szo or "U" in szo or "Ü" in szo or "Ű" in szo:
+        print("Van benne magánhangzó.")
+    else:
+        print("Nincs benne magánhangzó.")
+    
+
 
 def kilencedik():
     os.system("cls")
     print("Kilencedik feladat")
     print("Tanulmányozd a print() használatának eseteit, és jelenítsd meg print függvénnyel 20 és 7 hányadosát a lenti minta szerint! Az elválasztók tabulátorok.")
+
+    #létrehozzunk egy listát, amibe a számokat betesszük
+    szamok = []
+
+    #7 és 20 hányadosait hozzáadjuk a listához
+    szamok.append(20/7)
+    
 
 
 menu()
