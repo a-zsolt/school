@@ -66,6 +66,7 @@ td:nth-child(2){
 p{
     text-align: justify;
     padding: 5px;
+    text-indent: 25px;
 }
 figure{
     background-color: rgba(222,226,230,35%);
@@ -78,11 +79,12 @@ figcaption{
 }
 
 blockquote{
-    margin: 5px 25px;
+    margin: 10px;
     border-left: 15px solid rgb(222,226,230);
     background-color: rgba(222,226,230,35%);
     font-style: italic;
     border-radius: 20px;
+    font-size: 90%;
 }
 
 #halLista{
@@ -90,6 +92,7 @@ blockquote{
     list-style-type: none;
     padding-left: 0px;
     margin-left: 0px;
+    text-align: right;
 }
 
 #halLista li {

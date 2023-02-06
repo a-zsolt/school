@@ -106,22 +106,23 @@
         <div class="col-lg-7">
           <h2>Állatvilág</h2>
           <p>A tó élővilágának jelentős részét a szabad szemmel általában nem látható algafajok teszik ki, amelyek a Balaton legfontosabb szervesanyag termelői és újabb és újabb fajok kerülnek elő a tóból.  Az algák mennyiségét alapvetően a tápanyagterhelés hosszútávú alakulása szabja meg. A tó algásodását (eutrofizáció) csökkenteni kell, mert az idegenforgalmi vonzerejét csökkenti a folyamat.</p>
-          <p>A Balaton, lévén hazánk legnagyobb állóvize, halfaunája nagyon értékes. Az érdeklődők a legrészletesebben a <!--http://bodorka.info.hu--> Balatoni Vízivilág Látogatóközpontban tájékozódhatnak a vidék halaival. A tóban, a vele összefüggő Kis-Balatonban és a vízgyűjtő területén található 40 vízfolyásban 37 halfaj fordul elő, ebből a Balatonban 15-17 faj él meg. Az itt élő halak 80%-át a keszegfélék alkotják. Ezek közül a leggyakoribb a dévérkeszeg, a karikakeszeg, a bodorka és a vörösszárnyú keszeg.</p>
+          <p>A Balaton, lévén hazánk legnagyobb állóvize, halfaunája nagyon értékes. Az érdeklődők a legrészletesebben a <a href="http://bodorka.info.hu" target="_blank">Balatoni Vízivilág Látogatóközpontban</a> tájékozódhatnak a vidék halaival. A tóban, a vele összefüggő Kis-Balatonban és a vízgyűjtő területén található 40 vízfolyásban 37 halfaj fordul elő, ebből a Balatonban 15-17 faj él meg. Az itt élő halak 80%-át a keszegfélék alkotják. Ezek közül a leggyakoribb a dévérkeszeg, a karikakeszeg, a bodorka és a vörösszárnyú keszeg.</p>
           <p>A tó Európa egyik legjelentősebb vízimadár-élőhelye. Kiterjedt nádasai számos madárfaj számára nyújtanak fészkelő helyet. A legismertebb madár, a Balaton legnagyobb röpképes madara, a bütykös hattyú (Cygnus olor), amely a nádasban építi nagy méretű úszó fészkét, fészekhagyó fiókáit azonban kikelésük után gyakran a strandok közelében neveli fel, ahol könnyen jut hozzá a táplálékhoz, mivel a nyaralók rendszeresen etetik őket.</p>
           <p>Őshonos balatoni halfajok:</p>
           <div class="row">
             <div class="col-4">
               <ul id="halLista">
-                <li onmouseover="halinfo('balin');">Balin</li>
-                <li onmouseover="halinfo('bodorka');">Bodorka</li>
-                <li onmouseover="halinfo('deverkeszeg');">Dévérkeszeg</li>
-                <li onmouseover="halinfo('karikakeszeg');">Karikakeszeg</li>
-                <li onmouseover="halinfo('ponty');">Ponty</li>
-                <li onmouseover="halinfo('fogassullo');">Fogassüllő</li>
-                <li onmouseover="halinfo('csuka');">Csuka</li>
-                <li onmouseover="halinfo('compo');">Compó</li>
-                <li onmouseover="halinfo('fejes');">Fejes domolykó</li>
-                <li onmouseover="halinfo('garda');">Garda</li>
+                <li onclick="halinfo('balin');">Balin</li>
+                <li onclick="halinfo('bodorka');">Bodorka</li>
+                <li onclick="halinfo('deverkeszeg');">Dévérkeszeg</li>
+                <li onclick="halinfo('karikakeszeg');">Karikakeszeg</li>
+                <li onclick="halinfo('ponty');">Ponty</li>
+                <li onclick="halinfo('fogassullo');">Fogassüllő</li>
+                <li onclick="halinfo('csuka');">Csuka</li>
+                <li onclick="halinfo('compo');">Compó</li>
+                <li onclick="halinfo('fejes');">Fejes domolykó</li>
+                <li onclick="halinfo('garda');">Garda</li>
+                <li onclick="halinfo('harcsa');">Harcsa</li>
               </ul>
             </div>
             <div class="col-8">
@@ -129,7 +130,7 @@
                 <div id="sugo">
                   Kattint halfaj nevére, amiről többet szeretnél megtudni...
                 </div>
-                <a target="_blank">
+                <a id="halURL" target="_blank">
                   <img id="halKep" class="figure-img rounded img-fluid w-100">
                 </a>
                 <figcaption id="halNevek" class="figure-caption text-center"></figcaption>
