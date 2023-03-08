@@ -6,6 +6,12 @@
 ###               - írd ki a a képernyőre, hogy a "Kansas City Chiefs" győzött-e
 ###               - válaszd ki, hogy a "Tampa Stadium" hanyadik helyen van a listában
 ###               állományod neve: "superbowl.py", ezt kell feltöltened ide
+###               ------------------------------------------------------------------
+###               - Határozd meg és írd ki a képernyőre, higy a döntők során mennyi volt az átlagos
+###                 pontkülönbség a két csapat dközött
+###                 az átlagot egy tizedesjegyre kerekítve jelentsd meg
+###               - Keresd meg, hogy melyik döntőn volt a legtöbb néző!
+###               Feltételezheted, hogy nem alakult ki holtverseny
 import os
 
 def superbowl(bemenet, mod):
@@ -29,6 +35,10 @@ def superbowl(bemenet, mod):
         #Tampa Stadium helye
         print("Tampa Stadium helye:", sb.find("Tampa Stadium"))
 
-        sb.close() #file bezárása
+        print("--------------")
+
+        
+
+        
 
 superbowl("SuperBowl.txt", "r") #funkció meghívása paraméterekkel
