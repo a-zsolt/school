@@ -77,7 +77,7 @@ def SuperBowl(bemenet, mod):
     print("Átlagos pontkülönbség:", round((sum(eredmenyek_gyoztes) - sum(eredmenyek_vesztes)) / len(eredmenyek_gyoztes), 1))
 
     #legtöbb néző
-    print("Legtöbb néző:", max(nezok), "Meccs:", lista[lista.index(max(nezok)) - 1])
+    print("Legtöbb néző:", max(nezok), "Meccs:", lista[lista.index(max(nezok)) - 1],",", lista[lista.index(max(nezok))- 7])
     
 
 
