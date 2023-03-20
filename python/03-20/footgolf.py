@@ -6,7 +6,9 @@ def FootGolf(bemenet, mod):
     data = open(bemenet, mod, encoding="utf8").read().replace("\n", ";").split(";")
     
     #ha a fileban több mint 500 sor van bezárjuk
-    
+    if len(data) > 500:
+        print("A fileban több mint 500 sor van!")
+        return
 
     lista = list(data)
 
