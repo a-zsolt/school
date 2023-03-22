@@ -4,11 +4,7 @@ def FootGolf(bemenet, mod):
     os.system("cls")
     #file beolvasása és lista létrehozása, newline karakterek eltávolítása
     data = open(bemenet, mod, encoding="utf8").read().replace("\n", ";").split(";")
-    
-    #ha a fileban több mint 500 sor van bezárjuk
-    if len(data) > 500:
-        print("A fileban több mint 500 sor van!")
-        return
+
 
     lista = list(data)
 
@@ -41,7 +37,7 @@ def FootGolf(bemenet, mod):
 
     print("3. Feladat: A versenyen", noi_arany, "% a női versenyzők aránya.", "\n")
 
-    print("4. Feladat: Bajjnok női versenyző:")
+    print("4. Feladat: Bajnok női versenyző:")
     print("             Név:", versenyzok[osszegek.index(max(osszegek))])
     print("             Egyesület:", lista[osszegek.index(max(osszegek)) * 11 + 2])
     print("             Pontszám:", max(osszegek), "\n")
