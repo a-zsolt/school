@@ -5,6 +5,9 @@ class italok:
     def beolvasas(self):
         data = open(self.file, "r", encoding="utf8").read().replace("\n", ";").split(";")
 
+        while "" in data:
+            data.remove("")
+
         lista = list(data)
 
         #convert numbers to int
@@ -20,12 +23,11 @@ class italok:
     def termekek_szama(self):
         termekek = self.beolvasas()
 
+        termekek_szorp = []
         for i in termekek:
-            if isinstance(i, (int, float, complex)) == False:
-                pass
-            else:
-                termekek.remove(i)
-        return len(termekek), print(termekek)
+            if not isinstance(i, (int, float, complex)):
+                termekek_szorp.append(i)
+        return len(termekek_szorp)
     
 
 print("A raktáron", italok("adatok.txt").termekek_szama(), "féle szörp van.")
