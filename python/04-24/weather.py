@@ -23,5 +23,5 @@ if not data:
 
 
 print(
-    f"Currently in {location} the weather is: {data['weather'][0]['description']} // {data['main']['temp']} °C // h: {data['main']['temp_max']} °C // l: {data['main']['temp_min']} °C // humidty: {data['main']['humidity']} % // wind speed: {data['wind']['speed']} km/h"
+    f"Currently in {location} the weather is: {data['weather'][0]['description']} u// {data['main']['temp']} °C // h: {data['main']['temp_max']} °C // l: {data['main']['temp_min']} °C // humidty: {data['main']['humidity']} % // wind speed: {data['wind']['speed']} km/h"
     )
