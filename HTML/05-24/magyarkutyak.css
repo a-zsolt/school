@@ -1,0 +1,56 @@
+body{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d2691e;
+}
+
+h1{
+    text-decoration: underline #a62b2b 2pt;
+}
+
+p{
+    text-align: justify;
+}
+
+ul{
+    color: white;
+    list-style-type: none;
+}
+
+li{
+    display: inline-flex;
+    justify-content: center;
+    min-width: 50px;
+    border-right: 2px solid brown;
+    padding: 6px;
+}
+
+li:last-child {
+    border-right: none;
+  }
+
+.hasab {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2%;
+}
+
+h2{
+    width: 96%;
+    background-color: #cd853f;
+    font-style: italic;
+}
+
+img{
+    width: 100px;
+    height: auto;
+    float: left;
+    border: brown 2px solid;
+}
+
+footer {
+
+
+}
