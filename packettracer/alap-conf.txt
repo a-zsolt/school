@@ -1,0 +1,66 @@
+router 1941
+wireless router 
+
+nincs switch keresztkötésű kábel
+
+R1
+Router(config)#hostname R1
+R1(config)#ipv6 un
+R1(config)#ipv6 unicast-routing 
+R1(config)#int g0/0
+R1(config-if)#ipv6 add
+R1(config-if)#ipv6 address 2023:05:30:1::1/64
+R1(config-if)#no sh
+
+R1(config-if)#
+%LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+
+R1(config-if)#exit
+R1(config)#int g0/1
+R1(config-if)#ip addre
+R1(config-if)#ip address 10.10.20.1 255.255.255.0
+R1(config-if)#
+R1(config-if)#ipv6 address 2023:05:30:2::1/64
+R1(config-if)#
+R1(config-if)#no sh
+
+R1(config-if)#
+%LINK-5-CHANGED: Interface GigabitEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+
+
+server
+static ipv6 address 2023:05:30:1::2
+
+ssh
+
+R1(config)#enab
+R1(config)#enable sec
+R1(config)#enable pa
+R1(config)#enable password cisco
+R1(config)#user
+R1(config)#username Admin
+R1(config)#username Admin pass
+R1(config)#username Admin password cisco
+R1(config)#line 0 15
+No physical hardware support for line 3
+R1(config)#line vty 0 15
+R1(config-line)#login local
+R1(config-line)#trans
+R1(config-line)#transport in
+R1(config-line)#transport input ssh
+R1(config-line)#exit
+
+
+server ssh access
+C:\>ssh -l Admin 2023:05:30:1::1
+
+save config to tftp
+R1#copy startup-config tftp
+Address or name of remote host []? 2023:05:30:1::2
+Destination filename [R1-confg]? R1_config
+
+
