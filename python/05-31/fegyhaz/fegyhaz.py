@@ -1,12 +1,11 @@
-class fegyhaz:
-    def __init__ (self, orlista, rablista):
+class Fegyhaz:
+    def __init__(self, orlista, rablista):
         self.orlista = open(orlista, "r", encoding="utf8").read().replace("\n", ";").split(";")
         self.rablista = open(rablista, "r", encoding="utf8").read().replace("\n", ";").split(";")
 
     def letszam(self):
         print(f"Őrök létszáma a fegyházban: {len(self.orlista)}")
         print(f"Rabok létszáma a fegyházban: {len(self.rablista)}")
-        
 
     def rabkeres(self):
         rab = input("Adja meg a keresett rab azonosítóját: ")
@@ -43,7 +42,6 @@ class fegyhaz:
             for x in self.rablista:
                 self.rablista[self.rablista.index(x)] = self.rablista[self.rablista.index(x)].split(' ')
 
-
             setaltathato_rabok = []
 
             for x in self.rablista:
@@ -54,7 +52,6 @@ class fegyhaz:
             print(f"A {fegyor} azonosítóval rendelkező fegyőr a következő rabokat viheti levegőztetni: \n {str(setaltathato_rabok)}")
 
 
-
-fegyhaz('fegyorok.txt', 'rabok.txt').letszam()
-fegyhaz('fegyorok.txt', 'rabok.txt').rabkeres()
-fegyhaz('fegyorok.txt', 'rabok.txt').orkeres()
+Fegyhaz('fegyorok.txt', 'rabok.txt').letszam()
+Fegyhaz('fegyorok.txt', 'rabok.txt').rabkeres()
+Fegyhaz('fegyorok.txt', 'rabok.txt').orkeres()
